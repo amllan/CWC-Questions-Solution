@@ -47,7 +47,8 @@ public class Qn2 {
 	System.out.println("Enter the number of col of 2D array");
 	int col=sc.nextInt();
 	System.out.println("Enter the 2D array elements");
-	int a[][]=new int[row][col];
+	
+		int a[][]=new int[row][col];
 	for (int i = 0; i <row; i++) {
 		for (int j = 0; j <col; j++) {
 			a[i][j]=sc.nextInt();
