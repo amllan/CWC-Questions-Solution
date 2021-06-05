@@ -1,19 +1,13 @@
 
 public class Qn10 {
 	static int cal(int n) {
-		int sum=0;
-		 for (int i = 1; i <=3; i++)
-	        {
-	            String number = "";
-	            for (int j = 0; j < i; j++)
-	            {
-	                number = number + n;
-	            }
-	          
-	            sum += Integer.parseInt(number);
-	        }
-	       
-	      return sum; 
+
+	String a=Integer.toString(n);
+	
+	int sum=Integer.parseInt(a)+Integer.parseInt(a+a)+Integer.parseInt(a+a+a);
+	return sum;
+	
+	    
 	}
 
 	public static void main(String[] args) {
