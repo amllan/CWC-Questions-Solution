@@ -3,22 +3,21 @@ public class Qn4 {
 static boolean check_automorphic(int n) {
 
 	
+	
 	int s=(int)Math.pow(n,2);
 	
+	String a=Integer.toString(n);
+	String b=Integer.toString(s);
 	
-	 while(n>0) {
-		if(n%10!=s%10)  {
-			return false;
-			}	
+	if (b.endsWith(a)) {
+		return true;
+	}else
 		
-		n=n/10;
-		s=s/10;
-	 }
-	 return true;
+	return false;
 	}
 	
 	public static void main(String[] args) {
-		int n=75;
+		int n=5;
 		
 	if (check_automorphic(n)) {
 		System.out.println("The number "+n+" is automorphic");
